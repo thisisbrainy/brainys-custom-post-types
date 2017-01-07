@@ -1,0 +1,199 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Project-Id-Version: Post Types\n"
+"Language: et\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. ...
+#: ...
+msgid "Post Type has been successfully added."
+msgstr "Postituse tüüp on edukalt lisatud."
+
+#. ...
+#: ...
+msgid "Post Type has been deleted."
+msgstr "Postituse tüüp on kustutatud."
+
+#. ...
+#: ...
+msgid "You did not fill in the required fields."
+msgstr "Sa ei täitnud kõik vajalikud väljad ära."
+
+#. ...
+#: ...
+msgid "Post Types"
+msgstr "Postituse tüübid"
+
+#. Text in function
+#: index.php:43
+msgid "Delete"
+msgstr "Kustuta"
+
+#. Text in function
+#: index.php:12
+msgid "Description"
+msgstr "Kirjeldus"
+
+#. Text in function
+#: index.php:8
+msgid "Label"
+msgstr "Silt"
+
+#. Text in function
+#: index.php:16
+msgid "Name"
+msgstr "Nimi"
+
+#. Text in function
+#: index.php:59
+msgid "No description set."
+msgstr "Kirjeldus puudub."
+
+#. Text in function
+#: index.php:62
+msgid "No rewrite was set."
+msgstr "Ümberkirjutus puudub."
+
+#. Text in function
+#: index.php:20
+msgid "Rewrite"
+msgstr "Ümberkirjutus"
+
+#. Text in function
+#: index.php:51
+msgid "This post type is restricted. You can\\'t delete it."
+msgstr "See postituse tüüp on piiratud."
+
+#. Text in function
+#: add.php:126
+msgid "Add"
+msgstr "Lisa"
+
+#. Text in function
+#: add.php:117
+msgid "Author"
+msgstr "Autor"
+
+#. Text in function
+#: add.php:83
+msgid "Capability type"
+msgstr "Võime tüüp"
+
+#. Text in function
+#: add.php:120
+msgid "Comments"
+msgstr "Kommentaarid"
+
+#. Text in function
+#: add.php:116
+msgid "Editor"
+msgstr "Tekstiredaktor"
+
+#. Text in function
+#: add.php:119
+msgid "Excerpt"
+msgstr "Kokkuvõte"
+
+#. Text in function
+#: add.php:93
+msgid "Has archive"
+msgstr "On arhiiv"
+
+#. Text in function
+#: add.php:103
+msgid "Hierarchical"
+msgstr "Hierarhiline"
+
+#. Text in function
+#: add.php:13
+msgid "Max 20 characters, can not contain capital letters or spaces."
+msgstr "Mitte rohkem kui 20 karakterit, ei tohi sisalda suuri tähti ega tühikuid."
+
+#. Text in function
+#: add.php:106
+msgid "No"
+msgstr "Ei"
+
+#. Text in function
+#: add.php:86
+msgid "Page"
+msgstr "Leht"
+
+#. Text in function
+#: add.php:85
+msgid "Post"
+msgstr "Postitus"
+
+#. Text in function
+#: add.php:49
+msgid "Post Type Description (optional)"
+msgstr "Kirjeldus (valikuline)"
+
+#. Text in function
+#: add.php:23
+msgid "Post Type Label"
+msgstr "Silt"
+
+#. Text in function
+#: add.php:7
+msgid "Post Type Name"
+msgstr "Nimi"
+
+#. Text in function
+#: add.php:36
+msgid "Post Type Singular Label"
+msgstr "Silt (ainsuses)"
+
+#. Text in function
+#: add.php:70
+msgid "Rewrite (optional)"
+msgstr "Ümberkirjutus (valikuline)"
+
+#. Text in function
+#: add.php:60
+msgid "Show in admin"
+msgstr "Näida halduspaneelis"
+
+#. Text in function
+#: add.php:113
+msgid "Supports (optional)"
+msgstr "Toetab (valikuline)"
+
+#. Text in function
+#: add.php:118
+msgid "Thumbnail"
+msgstr "Esiletoodud pilt"
+
+#. Text in function
+#: add.php:115
+msgid "Title"
+msgstr "Pealkiri"
+
+#. Text in function
+#: add.php:105
+msgid "Yes"
+msgstr "Jah"
+
+#. Text in function
+#: add.php:41
+msgid "e.g. Essay"
+msgstr "Näide: Essee"
+
+#. Text in function
+#: add.php:28
+msgid "e.g. Essays"
+msgstr "Näide: Esseed"
+
+#. Text in function
+#: add.php:14 add.php:75
+msgid "e.g. essay"
+msgstr "Näide: essee"
