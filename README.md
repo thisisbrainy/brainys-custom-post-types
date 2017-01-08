@@ -12,13 +12,3 @@ Post Types isn’t a complicated, feature-rich plugin – it’s a simple tool t
 1. Upload the plugin files to the `/wp-content/plugins/post-types` directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Navigate to Tools->Post Types to start using the plugin.
-
-### Frequently Asked Questions
-
-For any questions feel free to get in touch on Twitter [@thisisbrainy](https://twitter.com/thisisbrainy).
-
-### Changelog
-
-##### 1.0
-
-* Initial release
