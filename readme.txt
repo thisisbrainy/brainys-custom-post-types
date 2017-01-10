@@ -1,7 +1,7 @@
-=== Post Types ===
+=== Brainy's Custom Post Types ===
 Contributors: thisisbrainy
 Donate link: https://brainy.blog
-Tags: post types, development
+Tags: CPT, custom, custom post type, custom post types, post types, post
 Requires at least: 4.0
 Tested up to: 4.7
 Stable tag: 1.0
@@ -12,7 +12,7 @@ Gives you the ability to view and create post types straight from within the Wor
 
 == Description ==
 
-Post Types isn’t a complicated, feature-rich plugin – it’s a simple tool to make a developer life easier, by letting you get a grasp of existing post types easily and letting you create new ones just as easily. What you do with those newly created post types is entirely up to you. Oh and, you can delete your own post types right from the plugin as well.
+Brainy's Custom Post Types isn’t a complicated, feature-rich plugin – it’s a simple tool to make a developer life easier, by letting you get a grasp of existing post types easily and letting you create new ones just as easily. What you do with those newly created post types is entirely up to you. Oh and, you can delete your own post types right from the plugin as well.
 
 Features:
 
@@ -21,7 +21,7 @@ Features:
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/post-types` directory.
+1. Upload the plugin files to the `/wp-content/plugins/brainys-custom-post-types` directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Navigate to Tools->Post Types to start using the plugin.
 
