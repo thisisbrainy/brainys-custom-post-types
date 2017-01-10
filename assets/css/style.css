@@ -1,4 +1,4 @@
-.acpt-notice {
+.bcpt-notice {
 	display: block;
 	height: 40px;
 	line-height: 39px;
@@ -13,16 +13,16 @@
 	margin-bottom: 10px;
 }
 
-.acpt-notice.acpt-red-notice {
+.bcpt-notice.bcpt-red-notice {
 	border-top: 2px solid #F64744;
 }
 
-.acpt-form-container {
+.bcpt-form-container {
 	font-size: 0;
 	margin-top: 10px;
 }
 
-.acpt-form-container * {
+.bcpt-form-container * {
 	box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -33,7 +33,7 @@
 	margin: 0;
 }
 
-.acpt-form-box {
+.bcpt-form-box {
 	display: inline-block;
 	width: calc(50% - 10px);
 	font-size: 14px;
@@ -48,31 +48,31 @@
 
 @media all and (max-width: 900px) {
 
-	.acpt-form-box {
+	.bcpt-form-box {
 		width: 100%;
 		margin-right: 0;
 	}
 
 }
 
-.acpt-form-box:nth-child(2) {
+.bcpt-form-box:nth-child(2) {
 	margin-right: 0;
 }
 
-.acpt-form-row {
+.bcpt-form-row {
 	display: block;
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
 
-.acpt-form-row:last-child {
+.bcpt-form-row:last-child {
 	border-bottom: 0;
 	padding-bottom: 0;
 	margin-bottom: 0
 }
 
-.acpt-form-row label {
+.bcpt-form-row label {
 	display: block;
 	font-size: 11px;
 	font-weight: 400;
@@ -81,37 +81,37 @@
 	margin-bottom: 10px;
 }
 
-.acpt-form-row input[type="text"] {
+.bcpt-form-row input[type="text"] {
 	width: 100%;
 	height: 30px;
 	margin-bottom: 10px;
 }
 
-.acpt-form-row input[type="checkbox"] {
+.bcpt-form-row input[type="checkbox"] {
 	width: 15px;
 	height: 15px;
 }
 
-.acpt-checkbox-span {
+.bcpt-checkbox-span {
 	font-size: 13px;
 	color: #777;
 }
 
-.acpt-form-row textarea {
+.bcpt-form-row textarea {
 	width: 100%;
 	height: 200px;
 }
 
-.acpt-form-row-description {
+.bcpt-form-row-description {
 	font-size: 13px;
 }
 
-.acpt-form-row-description p {
+.bcpt-form-row-description p {
 	font-size: 13px;
 	margin-bottom: 10px;
 }
 
-.acpt-form-row-example {
+.bcpt-form-row-example {
 	font-style: italic;
 	color: #888;
 }

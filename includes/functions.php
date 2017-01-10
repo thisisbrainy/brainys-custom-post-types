@@ -1,18 +1,18 @@
 <?php
 
 /* Set notification */
-function acpt_set_notification($message) {
+function bcpt_set_notification($message) {
 
-	$_SESSION['acpt_message'] = $message;
+	$_SESSION['bcpt_message'] = $message;
 
 }
 
 /* Get notification */
-function acpt_get_notification() {
+function bcpt_get_notification() {
 
-	if(!empty($_SESSION['acpt_message'])) {
+	if(!empty($_SESSION['bcpt_message'])) {
 
-		return $_SESSION['acpt_message'];
+		return $_SESSION['bcpt_message'];
 
 	}
 
@@ -21,36 +21,36 @@ function acpt_get_notification() {
 }
 
 /* Clear notification */
-function acpt_clear_notification() {
+function bcpt_clear_notification() {
 
-	unset($_SESSION['acpt_message']);
+	unset($_SESSION['bcpt_message']);
 
 }
 
 /* Get all post types created with this plugin */
-function acpt_post_types() {
+function bcpt_post_types() {
 
 	$options = wp_load_alloptions();
-	$acpt_post_types = [];
+	$bcpt_post_types = [];
 
 	foreach($options as $name => $value) {
 
-		if(stristr($name, 'acpt_post_type_')) {
+		if(stristr($name, 'bcpt_post_type_')) {
 
-			$acpt_post_types[$name] = $value;
+			$bcpt_post_types[$name] = $value;
 
 		}
 
 	}
 
-	return $acpt_post_types;
+	return $bcpt_post_types;
 
 }
 
 /* Register post types */
-function acpt_register_post_types() {
+function bcpt_register_post_types() {
 
-	$post_types = acpt_post_types();
+	$post_types = bcpt_post_types();
 
 	foreach($post_types as $post_type) {
 
@@ -71,7 +71,7 @@ function acpt_register_post_types() {
 
 		}
 
-		register_post_type('acpt_' . $data->name, [
+		register_post_type('bcpt_' . $data->name, [
 			'labels' => [
 				'name' => $data->label,
 				'singular_name' => $data->singular_label
@@ -94,24 +94,7 @@ function acpt_register_post_types() {
 }
 
 /* Admin view */
-function acpt_admin() {
-
-	// define $reserved
-	$reserved = [
-		'post',
-		'page',
-		'attachment',
-		'revision',
-		'nav_menu_item',
-		'custom_css',
-		'customize_changeset',
-		'product',
-		'product_variation',
-		'shop_order',
-		'shop_order_refund',
-		'shop_coupon',
-		'shop_webhook'
-	];
+function bcpt_admin() {
 
 	// define $action
 	$action = false;
@@ -123,28 +106,28 @@ function acpt_admin() {
 	}
 
 	// require head section
-	require ACPT_DIR . '/views/partials/header.php';
+	require BCPT_DIR . '/views/partials/header.php';
 
 	// views
 	if($action === 'add') {
 
-		require ACPT_DIR . '/views/add.php';
+		require BCPT_DIR . '/views/add.php';
 
 	}
 
 	if($action === 'edit') {
 
-		require ACPT_DIR . '/views/edit.php';
+		require BCPT_DIR . '/views/edit.php';
 
 	}
 
 	if(!$action) {
 
-		require ACPT_DIR . '/views/index.php';
+		require BCPT_DIR . '/views/index.php';
 
 	}
 
 	// require footer section
-	require ACPT_DIR . '/views/partials/footer.php';
+	require BCPT_DIR . '/views/partials/footer.php';
 
 }
