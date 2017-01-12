@@ -58,16 +58,6 @@ add_action('init', function() {
 
 	if(!empty($_POST['bcpt-add-form-submit'])) {
 
-		$bcpt_required_data = [
-			'bcpt-post-type-name',
-			'bcpt-post-type-label',
-			'bcpt-post-type-singular-label',
-			'bcpt-post-type-show-in-admin',
-			'bcpt-post-type-capability-type',
-			'bcpt-post-type-has-archive',
-			'bcpt-post-type-hierarchical'
-		];
-
 		$bcpt_features = [];
 
 		if(isset($_POST['bcpt-post-type-supports-title'])) {
@@ -106,34 +96,110 @@ add_action('init', function() {
 
 		}
 
-		$bcpt_data = [
-			'name' => sanitize_text_field($_POST['bcpt-post-type-name']),
-			'label' => sanitize_text_field($_POST['bcpt-post-type-label']),
-			'singular_label' => sanitize_text_field($_POST['bcpt-post-type-singular-label']),
-			'description' => sanitize_text_field($_POST['bcpt-post-type-description']),
-			'show_in_admin' => sanitize_text_field($_POST['bcpt-post-type-show-in-admin']),
-			'rewrite' => sanitize_text_field($_POST['bcpt-post-type-rewrite']),
-			'capability_type' => sanitize_text_field($_POST['bcpt-post-type-capability-type']),
-			'has_archive' => sanitize_text_field($_POST['bcpt-post-type-has-archive']),
-			'hierarchical' => sanitize_text_field($_POST['bcpt-post-type-hierarchical']),
-			'supports' => $bcpt_features
-		];
-
+		$bcpt_data = [];
 		$not_passed = false;
 
-		foreach($_POST as $key => $value) {
+		// Post Type Name
+		if(isset($_POST['bcpt-post-type-name'])) {
 
-			if(in_array($key, $bcpt_required_data)) {
+			$bcpt_data['name'] = sanitize_text_field($_POST['bcpt-post-type-name']);
 
-				if(empty($value)) {
+		} else {
 
-					$not_passed = true;
-
-				}
-
-			}
+			$not_passed = true;
 
 		}
+
+		// Post Type Label
+		if(isset($_POST['bcpt-post-type-label'])) {
+
+			$bcpt_data['label'] = sanitize_text_field($_POST['bcpt-post-type-label']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Singular Label
+		if(isset($_POST['bcpt-post-type-singular-label'])) {
+
+			$bcpt_data['singular_label'] = sanitize_text_field($_POST['bcpt-post-type-singular-label']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Description
+		if(isset($_POST['bcpt-post-type-description'])) {
+
+			$bcpt_data['description'] = sanitize_text_field($_POST['bcpt-post-type-description']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Show in Admin
+		if(isset($_POST['bcpt-post-type-show-in-admin'])) {
+
+			$bcpt_data['show_in_admin'] = sanitize_text_field($_POST['bcpt-post-type-show-in-admin']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Rewrite
+		if(isset($_POST['bcpt-post-type-rewrite'])) {
+
+			$bcpt_data['rewrite'] = sanitize_text_field($_POST['bcpt-post-type-rewrite']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Capability Type
+		if(isset($_POST['bcpt-post-type-capability-type'])) {
+
+			$bcpt_data['capability_type'] = sanitize_text_field($_POST['bcpt-post-type-capability-type']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Has Archive
+		if(isset($_POST['bcpt-post-type-has-archive'])) {
+
+			$bcpt_data['has_archive'] = sanitize_text_field($_POST['bcpt-post-type-has-archive']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Hierarchical
+		if(isset($_POST['bcpt-post-type-hierarchical'])) {
+
+			$bcpt_data['hierarchical'] = sanitize_text_field($_POST['bcpt-post-type-hierarchical']);
+
+		} else {
+
+			$not_passed = true;
+
+		}
+
+		// Post Type Supports
+		$bcpt_data['supports'] = $bcpt_features;
 
 		if(!$not_passed) {
 
