@@ -100,7 +100,7 @@ add_action('init', function() {
 		$not_passed = false;
 
 		// Post Type Name
-		if(isset($_POST['bcpt-post-type-name'])) {
+		if(!empty($_POST['bcpt-post-type-name'])) {
 
 			$bcpt_data['name'] = sanitize_text_field($_POST['bcpt-post-type-name']);
 
@@ -111,7 +111,7 @@ add_action('init', function() {
 		}
 
 		// Post Type Label
-		if(isset($_POST['bcpt-post-type-label'])) {
+		if(!empty($_POST['bcpt-post-type-label'])) {
 
 			$bcpt_data['label'] = sanitize_text_field($_POST['bcpt-post-type-label']);
 
@@ -122,7 +122,7 @@ add_action('init', function() {
 		}
 
 		// Post Type Singular Label
-		if(isset($_POST['bcpt-post-type-singular-label'])) {
+		if(!empty($_POST['bcpt-post-type-singular-label'])) {
 
 			$bcpt_data['singular_label'] = sanitize_text_field($_POST['bcpt-post-type-singular-label']);
 
@@ -133,18 +133,18 @@ add_action('init', function() {
 		}
 
 		// Post Type Description
-		if(isset($_POST['bcpt-post-type-description'])) {
+		if(!empty($_POST['bcpt-post-type-description'])) {
 
 			$bcpt_data['description'] = sanitize_text_field($_POST['bcpt-post-type-description']);
 
 		} else {
 
-			$not_passed = true;
+			$bcpt_data['description'] = '';
 
 		}
 
 		// Post Type Show in Admin
-		if(isset($_POST['bcpt-post-type-show-in-admin'])) {
+		if(!empty($_POST['bcpt-post-type-show-in-admin'])) {
 
 			$bcpt_data['show_in_admin'] = sanitize_text_field($_POST['bcpt-post-type-show-in-admin']);
 
@@ -155,18 +155,18 @@ add_action('init', function() {
 		}
 
 		// Post Type Rewrite
-		if(isset($_POST['bcpt-post-type-rewrite'])) {
+		if(!empty($_POST['bcpt-post-type-rewrite'])) {
 
 			$bcpt_data['rewrite'] = sanitize_text_field($_POST['bcpt-post-type-rewrite']);
 
 		} else {
 
-			$not_passed = true;
+			$bcpt_data['rewrite'] = false;
 
 		}
 
 		// Post Type Capability Type
-		if(isset($_POST['bcpt-post-type-capability-type'])) {
+		if(!empty($_POST['bcpt-post-type-capability-type'])) {
 
 			$bcpt_data['capability_type'] = sanitize_text_field($_POST['bcpt-post-type-capability-type']);
 
@@ -177,7 +177,7 @@ add_action('init', function() {
 		}
 
 		// Post Type Has Archive
-		if(isset($_POST['bcpt-post-type-has-archive'])) {
+		if(!empty($_POST['bcpt-post-type-has-archive'])) {
 
 			$bcpt_data['has_archive'] = sanitize_text_field($_POST['bcpt-post-type-has-archive']);
 
@@ -188,7 +188,7 @@ add_action('init', function() {
 		}
 
 		// Post Type Hierarchical
-		if(isset($_POST['bcpt-post-type-hierarchical'])) {
+		if(!empty($_POST['bcpt-post-type-hierarchical'])) {
 
 			$bcpt_data['hierarchical'] = sanitize_text_field($_POST['bcpt-post-type-hierarchical']);
 

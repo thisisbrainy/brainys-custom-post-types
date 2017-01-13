@@ -3,16 +3,18 @@
 /* Set notification */
 function bcpt_set_notification($message) {
 
-	$_SESSION['bcpt_message'] = $message;
+	update_option('bcpt_notification', $message);
 
 }
 
 /* Get notification */
 function bcpt_get_notification() {
 
-	if(!empty($_SESSION['bcpt_message'])) {
+	$notification = get_option('bcpt_notification');
 
-		return $_SESSION['bcpt_message'];
+	if($notification) {
+
+		return $notification;
 
 	}
 
@@ -23,7 +25,7 @@ function bcpt_get_notification() {
 /* Clear notification */
 function bcpt_clear_notification() {
 
-	unset($_SESSION['bcpt_message']);
+	delete_option('bcpt_notification');
 
 }
 

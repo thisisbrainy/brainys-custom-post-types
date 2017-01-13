@@ -15,8 +15,6 @@ Domain Path: /languages
 
 define('BCPT_DIR', __DIR__);
 
-session_start();
-
 require_once BCPT_DIR . '/includes/functions.php';
 require_once BCPT_DIR . '/includes/actions.php';
 require_once BCPT_DIR . '/includes/filters.php';
