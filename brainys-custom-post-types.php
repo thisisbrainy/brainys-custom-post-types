@@ -15,6 +15,13 @@ Domain Path: /languages
 
 define('BCPT_DIR', __DIR__);
 
+/* Load text domain */
+add_action('init', function() {
+
+	load_plugin_textdomain('bcpt', false, BCPT_DIR . '/languages');
+
+});
+
 require_once BCPT_DIR . '/includes/functions.php';
 require_once BCPT_DIR . '/includes/actions.php';
 require_once BCPT_DIR . '/includes/filters.php';

@@ -1,12 +1,5 @@
 <?php
 
-/* Load text domain */
-add_action('init', function() {
-
-	load_plugin_textdomain('bcpt', false, 'brainys-custom-post-types/languages');
-
-});
-
 /* Add Custom Post Types menu item to the Tools menu */
 add_action('admin_menu', function() {
 
@@ -94,6 +87,12 @@ add_action('init', function() {
 
 			$bcpt_features[] = 'comments';
 
+		}
+
+		if(isset($_POST['bcpt-post-type-supports-custom-fields'])) {
+
+			$bcpt_features[] = 'custom-fields';
+			
 		}
 
 		$bcpt_data = [];
