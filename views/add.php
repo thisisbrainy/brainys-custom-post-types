@@ -118,6 +118,7 @@
 			<input type="checkbox" name="bcpt-post-type-supports-thumbnail" value="support_thumbnail"> <span class="bcpt-checkbox-span"><?php echo __('Thumbnail', 'bcpt'); ?></span><br>
 			<input type="checkbox" name="bcpt-post-type-supports-excerpt" value="support_excerpt"> <span class="bcpt-checkbox-span"><?php echo __('Excerpt', 'bcpt'); ?></span><br>
 			<input type="checkbox" name="bcpt-post-type-supports-comments" value="support_comments"> <span class="bcpt-checkbox-span"><?php echo __('Comments', 'bcpt'); ?></span><br>
+			<input type="checkbox" name="bcpt-post-type-supports-custom-fields" value="support_custom_fields"> <span class="bcpt-checkbox-span"><?php echo __('Custom fields', 'bcpt'); ?></span><br>
 
 		</div>
 
