@@ -4,7 +4,7 @@
 Plugin Name: Brainy's Custom Post Types
 Plugin URI: https://brainy.blog/post-types/
 Description: Gives you the ability to view and create post types straight from within the WordPress admin panel
-Version: 1.0.1
+Version: 1.0.2
 Author: Brainy
 Author URI: https://brainy.blog
 License: GNU General Public License v2 or later
